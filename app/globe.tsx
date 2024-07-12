@@ -414,8 +414,12 @@ export function GlobeDemo() {
           }}
           className="div"
         ></motion.div>
-        <div className="absolute w-full bottom-0 inset-x-0 h-40  pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
-        <div className="absolute w-full h-72 md:h-full z-10">
+        <div className="absolute w-full bottom-0 inset-x-0 h-full  pointer-events-none select-none from-transparent dark:to-black to-white z-40" />
+        <div
+          className="
+        absolute w-full h-[200px] md:h-[300px] lg:h-[400px] xl:h-[530px] 2xl:h-[600px] 3xl:h-full mt-52 md:mt-40 lg:mt-28 xl:mt-14 2xl:mt-6 3xl:mt-0 z-10
+        "
+        >
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>

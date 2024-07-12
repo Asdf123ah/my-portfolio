@@ -42,12 +42,12 @@ export const MenuItem = ({
             <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
-                className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
+                layoutId="active"
+                className="bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
                 <motion.div
-                  layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
+                  layout
+                  className=" w-[800px] bg-black h-auto p-4 md:w-[500px] lg:w-[600px] xl:w-[700px] 2xl:w-[800px] 3xl:w-max "
                 >
                   {children}
                 </motion.div>
@@ -69,8 +69,8 @@ export const Menu = ({
 }) => {
   return (
     <nav
-      onMouseLeave={() => setActive(null)} // resets the state
-      className="text-[24px] mx-auto w-screen relative rounded-none border-b dark:bg-neutral-950 dark:border-white/[0.2] bg-[#0a0a0a] shadow-input flex items-center justify-center space-x-12 px-8 py-4"
+      onMouseLeave={() => setActive(null)}
+      className=" text-[14px] mx-auto w-screen relative rounded-none border-b border-white/[0.2] bg-[#0a0a0a] shadow-input flex items-center justify-center space-x-2 px-8 py-4 md:text-[16px] md:space-x-4 lg:text-[18px] lg:space-x-6 xl:text-[20px] xl:space-x-8 2xl:text-[22px] 2xl:space-x-10 3xl:text-[24px] 3xl:space-x-12 "
     >
       {children}
     </nav>

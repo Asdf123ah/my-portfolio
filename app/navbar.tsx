@@ -29,7 +29,13 @@ function Navbar({ className }: { className?: string }) {
       className={cn("fixed text-white bg-[#0a0a0a] mx-auto z-50 ", className)}
     >
       <Menu setActive={setActive}>
-        <div className="relative text-[48px] font-bold mr-[25%]">JONATHAN</div>
+        <div
+          className="
+        relative text-[4px] font-bold mr-[1%] sm:text-[8px] sm:mr-[5%] md:text-[16px] md:mr-[9%] lg:text-[24px] lg:mr-[13%] xl:text-[32px] xl:mr-[17%] 2xl:text-[40px] 2xl:mr-[21%] 3xl:text-[48px] 3xl:mr-[25%]
+        "
+        >
+          JONATHAN
+        </div>
         <Link href="/" passHref>
           <MenuItem setActive={setActive} active="" item="Home"></MenuItem>
         </Link>
