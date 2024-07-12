@@ -86,21 +86,21 @@ export function VortexDemo() {
         particleCount={1000}
         className="flex items-center flex-col px-2 md:px-10 py-4 w-full h-full"
       >
-        <h1 id="projects" className="text-white text-[40px] font-bold">
+        <h1 id="projects" className="text-white text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[40px] font-bold">
           Projects
         </h1>
         <div
           id="sycures"
-          className="grid grid-cols-2 w-[75%] mt-20 space-y-20 gap-20 mx-auto"
+          className="grid grid-cols-2 w-[75%] mt-20 space-y-20 gap-4 md:gap-4 lg:gap-8 xl:gap-12 2xl:gap-16 3xl:gap-20 mx-auto"
         >
           <div className="col-span-1 flex flex-col w-full items-center text-white justify-center">
             <AnimatedText>
-              <h1 className="w-full mb-0 text-[40px] text-left">
+              <h1 className="w-full mb-0 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[32px] 3xl:text-[40px] text-left mt-20">
                 <Highlight className="text-black dark:text-white">
                   Sycures
                 </Highlight>
               </h1>
-              <p className="mb-4 text-[20px] text-justify">
+              <p className="mb-4 text-[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[16px] 3xl:text-[20px] text-justify">
                 Developed an interactive quiz game using React and vanilla CSS
                 to enhance digital literacy skills among youth. Leveraged
                 MongoDB for efficient data storage of user progress, quiz
@@ -125,7 +125,7 @@ export function VortexDemo() {
         </div>
         <div
           id="majjiprems"
-          className="grid grid-cols-2 w-[78%] mt-20 space-y-4 gap-20 mx-auto"
+          className="grid grid-cols-2 w-[78%] mt-20 space-y-4 gap-4 md:gap-4 lg:gap-8 xl:gap-12 2xl:gap-16 3xl:gap-20 mx-auto"
         >
           <div className="col-span-1 flex items-center justify-center">
             <Link
@@ -142,12 +142,12 @@ export function VortexDemo() {
           </div>
           <div className="col-span-1 flex flex-col w-full items-center text-white justify-center">
             <AnimatedText>
-              <h1 className="mb-0 text-[40px] text-left w-full">
+              <h1 className="mb-0 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[32px] 3xl:text-[40px] text-left w-full">
                 <Highlight className="text-black dark:text-white">
                   MAJJI PREMS
                 </Highlight>
               </h1>
-              <p className="mb-4 text-[20px] text-justify">
+              <p className="mb-4 text-[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[16px] 3xl:text-[20px] text-justify">
                 Created an online store using PHP for browsing, cart management,
                 and purchases. Implemented phpMyAdmin SQL for handling products,
                 users, and transactions efficiently. Enhanced user experience by
@@ -159,16 +159,16 @@ export function VortexDemo() {
         </div>
         <div
           id="earchiving"
-          className="grid grid-cols-2 w-[75%] mt-20 space-y-20 gap-20 mx-auto"
+          className="grid grid-cols-2 w-[75%] mt-20 space-y-20 gap-4 md:gap-4 lg:gap-8 xl:gap-12 2xl:gap-16 3xl:gap-20 mx-auto"
         >
           <div className="col-span-1 flex flex-col w-full items-center text-white justify-center">
             <AnimatedText>
-              <h1 className="w-full mb-0 text-[40px] text-left">
+              <h1 className="w-full mb-0 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[32px] 3xl:text-[40px] text-left mt-20">
                 <Highlight className="text-black dark:text-white">
                   E-Archiving System
                 </Highlight>
               </h1>
-              <p className="mb-4 text-[20px] text-justify">
+              <p className="mb-4 text-[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[16px] 3xl:text-[20px] text-justify">
                 Contributed to the development of an archiving system using
                 Next.js and React, optimizing document storage and retrieval
                 efficiency. Implemented PostgreSQL with Supabase and EdgeStore
@@ -191,7 +191,7 @@ export function VortexDemo() {
         </div>
         <div
           id="eventmanagement"
-          className="grid grid-cols-2 w-[78%] mt-20 space-y-4 gap-20 mx-auto"
+          className="grid grid-cols-2 w-[78%] mt-20 space-y-4 gap-4 md:gap-4 lg:gap-8 xl:gap-12 2xl:gap-16 3xl:gap-20 mx-auto"
         >
           <div className="col-span-1 flex items-center justify-center">
             <Link
@@ -208,12 +208,12 @@ export function VortexDemo() {
           </div>
           <div className="col-span-1 flex flex-col w-full items-center text-white justify-center">
             <AnimatedText>
-              <h1 className="mb-0 text-[40px] text-left w-full">
+              <h1 className="mb-0 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[32px] 3xl:text-[40px] text-left w-full">
                 <Highlight className="text-black dark:text-white">
                   Event Management System
                 </Highlight>
               </h1>
-              <p className="mb-4 text-[20px] text-justify">
+              <p className="mb-4 text-[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[16px] 3xl:text-[20px] text-justify">
                 Contributed to building an event management system using
                 TypeScript, Next.js, and React, facilitating seamless event
                 creation, updates, and management. Utilized json-server to
@@ -225,16 +225,16 @@ export function VortexDemo() {
         </div>
         <div
           id="ipcrsystem"
-          className="grid grid-cols-2 w-[75%] mt-20 space-y-20 gap-20 mx-auto"
+          className="grid grid-cols-2 w-[75%] mt-20 space-y-20 gap-4 md:gap-4 lg:gap-8 xl:gap-12 2xl:gap-16 3xl:gap-20 mx-auto"
         >
           <div className="col-span-1 flex flex-col w-full items-center text-white justify-center">
             <AnimatedText>
-              <h1 className="w-full mb-0 text-[40px] text-left">
+              <h1 className="w-full mb-0 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[32px] 3xl:text-[40px] text-left mt-20">
                 <Highlight className="text-black dark:text-white">
                   IPCR-System
                 </Highlight>
               </h1>
-              <p className="mb-4 text-[20px] text-justify">
+              <p className="mb-4 text-[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[16px] 3xl:text-[20px] text-justify">
                 Contributed to developing a performance review system using
                 Next.js and React, enabling tracking of commitments and reviews.
                 Implemented MongoDB for scalable storage of performance data.
@@ -259,7 +259,7 @@ export function VortexDemo() {
         </div>
         <div
           id="studentmanagement"
-          className="grid grid-cols-2 w-[78%] mt-20 mb-20 space-y-4 gap-20 mx-auto"
+          className="grid grid-cols-2 w-[78%] mt-20 mb-20 space-y-4 gap-4 md:gap-4 lg:gap-8 xl:gap-12 2xl:gap-16 3xl:gap-20 mx-auto"
         >
           <div className="col-span-1 flex items-center justify-center">
             <Link
@@ -276,12 +276,12 @@ export function VortexDemo() {
           </div>
           <div className="col-span-1 flex flex-col w-full items-center text-white justify-center">
             <AnimatedText>
-              <h1 className="mb-0 text-[40px] text-left w-full">
+              <h1 className="mb-0 text-[14px] md:text-[16px] lg:text-[18px] xl:text-[24px] 2xl:text-[32px] 3xl:text-[40px] text-left w-full">
                 <Highlight className="text-black dark:text-white">
                   Student Management System
                 </Highlight>
               </h1>
-              <p className="mb-4 text-[20px] text-justify">
+              <p className="mb-4 text-[6px] md:text-[8px] lg:text-[10px] xl:text-[12px] 2xl:text-[16px] 3xl:text-[20px] text-justify">
                 Developed a web-based system using JavaScript, HTML, and CSS for
                 tracking and managing student requirements. Implemented
                 localStorage for efficient client-side data storage, ensuring
