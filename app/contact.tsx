@@ -24,8 +24,8 @@ export function VortexDemoSecond() {
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
       >
-        <div className="flex flex-row w-[75%] gap-12 text-white justify-center text-[24px]">
-          <div className="flex flex-col items-start justify-center">
+        <div className="flex flex-row w-[75%] gap-7 md:gap-x-8 lg:gap-x-9 xl:gap-x-10 2xl:gap-x-11 3xl:gap-12 text-white justify-center text-[4px] md:text-[8px] lg:text-[12px] xl:text-[16px] 2xl:text-[20px] 3xl:text-[24px]">
+          <div className="flex flex-col items-start justify-center -mt-2 md:-mt-6 lg:-mt-10 xl:-mt-12 2xl:-mt-14 3xl:mt-0">
             <p className="mb-4">
               <b>Explore</b>
             </p>
@@ -71,7 +71,7 @@ export function VortexDemoSecond() {
           </div>
           <div className="relative flex items-center justify-center">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="h-80 border-l-2 border-white"></div>
+              <div className="h-28 md:h-40 lg:h-56 xl:h-64 2xl:h-72 3xl:h-80 border-l-2 border-white"></div>
             </div>
           </div>
           <div className="flex flex-col items-start justify-center">
@@ -110,7 +110,7 @@ export function VortexDemoSecond() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center gap-y-4">
+          <div className="flex flex-col items-center justify-center gap-y-1 md:gap-y-1 lg:gap-y-1 xl:gap-y-2 2xl:gap-y-3 3xl:gap-y-4">
             <input
               className="h-1/6 rounded-lg text-black"
               type="text"
