@@ -10,6 +10,7 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { Highlight } from "@/components/ui/hero-highlight";
 
 export function VortexDemoSecond() {
   return (
@@ -78,6 +79,17 @@ export function VortexDemoSecond() {
             <p>
               <b>Jonathan Guevarra</b>
             </p>
+            <Highlight className="text-black dark:text-white">
+              <a
+                href="/Jonathan_Guevarra_Resume.pdf"
+                download
+                className="cursor-pointer"
+              >
+                <p>
+                  <b>RESUME</b>
+                </p>
+              </a>
+            </Highlight>
             <p>
               <b>Contact</b>
             </p>
