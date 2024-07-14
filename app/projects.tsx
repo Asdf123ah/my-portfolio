@@ -78,6 +78,24 @@ export function VortexDemo() {
     );
   };
 
+  const handleEArchivingClick = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    const primaryLink = "http://e-archiving.ccs-octa.com/";
+    const fallbackLink = "https://github.com/stephaniexjoy/archiving-system";
+    
+    fetch(primaryLink, { method: 'HEAD' })
+      .then(response => {
+        if (response.ok) {
+          window.location.href = primaryLink;
+        } else {
+          window.location.href = fallbackLink;
+        }
+      })
+      .catch(() => {
+        window.location.href = fallbackLink;
+      });
+  };
+
   return (
     <div className="w-[calc(100%-0rem)] mx-auto rounded-md h-auto overflow-hidden">
       <Vortex
@@ -86,7 +104,10 @@ export function VortexDemo() {
         particleCount={1000}
         className="flex items-center flex-col px-2 md:px-10 py-4 w-full h-full"
       >
-        <h1 id="projects" className="text-white text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[40px] font-bold">
+        <h1
+          id="projects"
+          className="text-white text-[20px] md:text-[24px] lg:text-[28px] xl:text-[32px] 2xl:text-[36px] 3xl:text-[40px] font-bold"
+        >
           Projects
         </h1>
         <div
@@ -179,7 +200,11 @@ export function VortexDemo() {
             </AnimatedText>
           </div>
           <div className="col-span-1 flex items-center justify-center">
-            <Link href="http://e-archiving.ccs-octa.com/" target="_blank">
+            <Link
+              href="http://e-archiving.ccs-octa.com/"
+              target="_blank"
+              onClick={handleEArchivingClick}
+            >
               <AnimatedImage
                 width={600}
                 height={300}
