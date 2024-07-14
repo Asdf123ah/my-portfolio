@@ -37,7 +37,7 @@ export function VortexDemo() {
         initial="hidden"
         animate={controls}
         variants={textAnimation}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
       >
         {children}
       </motion.div>
@@ -65,7 +65,7 @@ export function VortexDemo() {
         initial="hidden"
         animate={controls}
         variants={imageAnimation}
-        transition={{ duration: 0.5, delay: 0.4 }}
+        transition={{ duration: 0.6, delay: 0.6 }}
       >
         <Image
           src={src}

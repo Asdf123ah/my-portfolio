@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import { Vortex } from "@/components/ui/vortex";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,8 +11,26 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Highlight } from "@/components/ui/hero-highlight";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export function VortexDemoSecond() {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({
+        opacity: 1,
+        y: 0,
+        transition: { duration: 0.6 },
+      });
+    }
+  }, [controls, inView]);
+
   return (
     <div
       id="contact"
@@ -25,7 +43,12 @@ export function VortexDemoSecond() {
         baseHue={120}
         className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full h-full"
       >
-        <div className="flex flex-row w-[75%] gap-7 md:gap-x-8 lg:gap-x-9 xl:gap-x-10 2xl:gap-x-11 3xl:gap-12 text-white justify-center text-[4px] md:text-[8px] lg:text-[12px] xl:text-[16px] 2xl:text-[20px] 3xl:text-[24px]">
+        <motion.div
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          className="flex flex-row w-[75%] gap-7 md:gap-x-8 lg:gap-x-9 xl:gap-x-10 2xl:gap-x-11 3xl:gap-12 text-white justify-center text-[4px] md:text-[8px] lg:text-[12px] xl:text-[16px] 2xl:text-[20px] 3xl:text-[24px]"
+        >
           <div className="flex flex-col items-start justify-center -mt-2 md:-mt-6 lg:-mt-10 xl:-mt-12 2xl:-mt-14 3xl:mt-0">
             <p className="mb-4">
               <b>Explore</b>
@@ -140,7 +163,7 @@ export function VortexDemoSecond() {
             />
             <button className="bg-slate-500 w-full rounded-lg">Submit</button>
           </div>
-        </div>
+        </motion.div>
       </Vortex>
     </div>
   );
