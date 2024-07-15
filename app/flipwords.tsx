@@ -4,6 +4,7 @@ import { FlipWords2 } from "@/components/ui/flip-words";
 import { FlipWords3 } from "@/components/ui/flip-words";
 import { GlobeDemo } from "./globe";
 import { motion } from "framer-motion";
+import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export function FlipWordsDemo() {
   const words1 = ["CREATE", "BUILD", "DEVELOP"];
@@ -41,6 +42,7 @@ export function FlipWordsDemo() {
           <GlobeDemo />
         </div>
       </div>
+      <BackgroundBeams />
     </div>
   );
 }
